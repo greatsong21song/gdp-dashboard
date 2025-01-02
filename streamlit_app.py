@@ -26,7 +26,7 @@ def get_gdp_data():
     raw_gdp_df = pd.read_csv(DATA_FILENAME)
 
     MIN_YEAR = 1960
-    MAX_YEAR = 2022
+    MAX_YEAR = 2023
 
     # The data above has columns like:
     # - Country Name
@@ -92,7 +92,7 @@ if not len(countries):
 selected_countries = st.multiselect(
     'Which countries would you like to view?',
     countries,
-    ['DEU', 'FRA', 'GBR', 'BRA', 'MEX', 'JPN'])
+    ['DEU', 'FRA', 'GBR', 'BRA', 'MEX', 'JPN', 'KOR', 'CHN', 'USA'])
 
 ''
 ''
